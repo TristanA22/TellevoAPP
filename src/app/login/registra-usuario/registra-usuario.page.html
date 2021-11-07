@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register User</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/home'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="login">
+    <ion-img class="img2" src="assets/img/registrar.svg"></ion-img>
+  </div>
+</ion-header>
+<ion-content class='card'>
+    <ion-card-header>
+      <ion-title>User Data</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.nombre"></ion-input>
+      </ion-item> 
+     <ion-item lines="full">
+      <ion-label position="floating">Surnames</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.apellidos"></ion-input>
+    </ion-item>
+   <ion-item lines="full">
+        <ion-label position="floating">User/Login</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.usuario"></ion-input>
+   </ion-item>  
+   <ion-item lines="full">
+    <ion-label position="floating" >Password</ion-label>
+    <ion-input type="password" [(ngModel)]="usuario.password"></ion-input>
+  </ion-item>  
+   </ion-card-content> 
+    <ion-row>
+      <ion-col>
+        <!-- Indicamos mediante el (click) la funcion a quien referenciara-->
+        <div class="ion-text-center">
+          <ion-button (click)="registrarUsuario()">Register User</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Sede Antonio Varas - Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-footer>

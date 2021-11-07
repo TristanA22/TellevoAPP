@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref='/home'></ion-back-button>
+  </ion-buttons>
+    <ion-title> Duoc UC Students </ion-title>  
+  </ion-toolbar>
+  <div class="login">
+    <ion-img class="img2" src="assets/img/car.svg"></ion-img>
+  </div>
+</ion-header>
+  <ion-content [fullscreen]="true">
+  <ion-title class="t2"> STUDENTS WITH MOBILIZATION </ion-title><br><br>
+  <ion-list *ngFor="let alumno of listaAlumnosCON">
+    <ion-item [routerLink]="['./', alumno.id]">
+      <ion-avatar slot="start" >
+          <ion-img src="assets/img/cara.png"></ion-img>
+        </ion-avatar>
+      {{alumno.id}} {{alumno.nombre}}
+    </ion-item>
+  </ion-list>
+  <div class="ion-text-center">
+  <ion-button routerLink="/registrar-alumno" routerDirection="back">Register New Student</ion-button>
+</div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Sede Antonio Varas - Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-footer>
+

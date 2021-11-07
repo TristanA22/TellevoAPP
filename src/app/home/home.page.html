@@ -1,20 +1,34 @@
+<!-- TODO: TRABAJO REALIZADO POR TRISTAN ARAYA / ELIAS VILLAR, PROGRAMACION DE APLICACIONES MOVILES, SIGLAS DE SECCION: PGY4121, DUOC UC -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      <h1>Te Llevo App</h1>
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-text-center">
+    <ion-img class="img1" src="assets/img/auto.svg"></ion-img>
   </div>
+  
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+
+ 
+  <div class="ion-text-center">
+    <ion-button expand="full" routerLink="/login" routerDirection="forward">Log in</ion-button>
+    <ion-button expand="full" routerLink="/registra-usuario" routerDirection="forward">Register User</ion-button>
+    <ion-button expand="full"routerLink="/r-password" routerDirection="forward">Restore Password</ion-button>
+    <ion-button expand="full" routerLink="/registrar-alumno" routerDirection="forward">Register students with mobilization</ion-button>
+    <ion-button expand="full" routerLink="/registrar-alumno-sin" routerDirection="forward">Register students without mobilization</ion-button>
+    <ion-button expand="full" routerLink="/alumnos" routerDirection="forward">View students with mobilization</ion-button>
+    <ion-button expand="full" routerLink="/alumnos-sin" routerDirection="forward" fill="solid">View students without mobilization</ion-button>
+
+</div>
+</ion-list>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Sede Antonio Varas - Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-footer>
+

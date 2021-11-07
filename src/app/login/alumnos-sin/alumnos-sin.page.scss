@@ -1,0 +1,39 @@
+ion-toolbar {    
+    --background: #1E89E2;
+    display: inline-block;
+    
+  }
+  ion-header {
+    --background: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+  }
+  @-webkit-keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+  ion-title {
+    text-align: center;
+    -webkit-animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    color: antiquewhite;
+    
+  }
+  ion-content {
+    margin-top: auto;
+    --background: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+  }
+  @-webkit-keyframes shake-br{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}@keyframes shake-br{0%,100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}10%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}20%,40%,60%{-webkit-transform:rotate(-4deg);transform:rotate(-4deg)}30%,50%,70%{-webkit-transform:rotate(4deg);transform:rotate(4deg)}80%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}90%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}}
+  .img2{
+    -webkit-animation:shake-br .8s cubic-bezier(.455,.03,.515,.955) both;animation:shake-br .8s cubic-bezier(.455,.03,.515,.955) both;
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+  .fo {
+    background: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+  }
+  .login {
+    background: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+  }
+  ion-card-header {
+    color: rgb(17, 140, 240);
+    --background: linear-gradient( 135deg, #FFE985 10%, #FA742B 100%);
+}

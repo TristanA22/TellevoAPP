@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Welcome <br> {{alumno.nombre}} {{alumno.apellidos}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/alumnos'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header><ion-content fullscreen>
+    <ion-card>
+    <div class="login">
+      <ion-img class="img2" src="assets/img/granjero.svg"></ion-img>
+      </div>  
+      <ion-card-header>
+        <ion-title> Duoc UC Student</ion-title><br><br>
+        <ion-row>
+          <ion-label>Address :</ion-label>{{alumno.domicilio}}
+        </ion-row>
+        <ion-row>
+          <ion-label>Contact :</ion-label>{{alumno.fono}}
+        </ion-row>
+        <ion-row>
+          <ion-label>Mobilization :</ion-label>{{alumno.movilizacion}}
+        </ion-row>
+        <ion-row>
+          <ion-label>Closing hour :</ion-label>{{alumno.horario_salida}}
+        </ion-row>
+        <ion-row>
+          <ion-label>Price per person :</ion-label>{{alumno.costoxpersona}}
+        </ion-row>
+          <ion-row>
+            <ion-label>Destiny:</ion-label>{{alumno.destino}}
+          </ion-row>
+        </ion-card-header>
+   </ion-card>
+  </ion-content>
+   <ion-footer>
+    <ion-toolbar>
+      <ion-title>Sede Antonio Varas - Duoc UC</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  
+  
